@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<div id="pagehead">
+    <div class="container">
+        <nav>
+     
+            <ul id="headermenu">
+                <li><a href="#pagehead">Home</a></li>
+                <li><a href="#details">About</a></li>
+                <li><a href="#skl">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            
+        </nav>
+        <div class="pagehead-txt">
+            <h1 >Hi, I'm <span>Srihari Karthik</span><br></h1>
+            <p ><span id="typing">Python Developer/Data Enthusiast</span></p>
+            
+        </div>
+    </div>
+</div>
+
+<div id="details">
+    <div class="container">
+        <div class="row">
+            <div class="details-col-1">
+                <img src="images/me.jfif">
+            </div>
+            <div class="details-col-2">
+                <h1 class="title1">About Me</h1>
+                <p>I am a Computer Science Engineering undergraduate with a strong foundation in Python, SQL, and JavaScript. With over two years of experience at Deloitte, I have taken on various roles, including that of a Data Analyst and AI/ML Engineer, where I've honed my technical and analytical skills. My client-facing roles as a consultant have also helped me develop strong interpersonal and communication abilities.
+                    I am deeply passionate about data science and analytics, constantly trying to improve my expertise in this dynamic field. Outside of work, I have a love for music, often singing and playing the keyboard. Additionally, I enjoy staying active by playing badminton.</p>
+
+                <div class="subcategory-title">
+                 
+                    <p class="subcategory-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="subcategory-links" onclick="opentab('education')">Education</p>
+                    <p class="subcategory-links" onclick="opentab('resume')">Resume</p>
+                    <p class="subcategory-links" onclick="opentab('contact')">Contact</p>
+                </div>
+
+                <div class="subcategory-details active-tab" id="experience">
+                    <ul>
+                        <li><span>June 2022 - August 2024</span><br>Consultant at Deloitte</li>
+                        <li><span>Jan 2022 - April 2022</span><br>Tech Intern Deloitte<br>Deloitte</li>
+                    </ul>
+                </div>
+                <div class="subcategory-details" id="education">
+                    <ul>
+                        <li><span>2018-2022</span><br>B-Tech Computer Science from SRM Institute of Technology</li>
+                    </ul>
+                </div>
+                <div class="subcategory-details" id="resume">
+                    <ul>
+                        <li><span>Click Below to view my resume</span><br><br><a href="./images/resume.docx"><button class ="resbut">Click Here!</button></a></li>
+                    </ul>
+                </div>
+                <div class="subcategory-details" id="contact">
+                    <ul>
+                        <li><span>LinkedIn </span><br>https://www.linkedin.com/in/srihari-karthik-9390321bb/</i></li>
+                        <li><span>Email</span><br>sriharikarthik13@gmail.com</li>
+                        <li><span>Phone No.</span><br>+919087908748</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="skl">
+    <div class="container">
+        <h1 class="title1">My Skills</h1>
+        <div class="services-list">
+           
+            <div class="pop">
+                <img src="images/da.png">
+               
+                <i class="fas fa-code"></i>
+                <h2>Data            Analytics</h2>
+                <br>
+                <p>Skills : <br> SQL, Python, PowerBI</p>
+                <br>
+                <p>A domain, I love working in, I enjoy working with tools to extract information from data.<br><br> In my first year at Deloitte, I gained extensive experience using SQL and Python for data analysis and extracting specific set of data based on client requirement. <br> <br> I also extensively utilized PowerBI to design attractive dashboards to visualize the developed data.</p>
+                
+            </div>
+            <div class="pop">
+                <img src="images/ml.png">
+               
+                <i class="fas fa-code"></i>
+                <h2>Machine Learning</h2>
+                <br>
+                <p>Skills : <br> Machine Learning Models, Natural Language Processing, GENAI(Basics)</p>
+                <br>
+                <p>I'm highly passionate about the field of machine learning, which I've explored both academically and professionally. <br><br> My interest in Natural Language Processing grew while developing an automated ML training process during a project at Deloitte. <br> <br> Currently, I'm focused on learning more about Generative AI to stay ahead in this rapidly evolving field.</p>
+                
+            </div>
+            <div class="pop">
+                <img src="images/wb.png">
+               
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <br>
+                <p>Skills : <br>HTML/CSS, JavaScript, Flask, Django, React, RESTAPI's</p>
+                <br>
+                <p>My interest in designing web applications began after attending a bootcamp during a training session at Deloitte. <br> <br>As a CTF Challenge developer for a hackathon platform at Deloitte, I further honed these skills, equipping myself to create more advanced and robust applications</p>
+                
+            </div>
+            
+
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+<div id="projects">
+    <div class="container">
+        <h1 class="title1">My Projects</h1>
+        <div class="listofprojects">
+            <div class="project">
+                <img src="images/mm.png">
+                <div class="box">
+                    <h3>Music Monsoon</h3>
+                    <p>Developed a CNN model used to predict the Genre of a Music File and incoporated it with a weather app.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/RR.png">
+                <div class="box">
+                    <h3>Resume Ranker</h3>
+                    <p>An application developed which utilises features of BERT, SBERT and TF-IDF to build a system that ranks provided resumes with their similarity to a provided job description.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/RRR.png">
+                <div class="box">
+                    <h3>What's Cooking?</h3>
+                    <p>A web application built using React that incoporates GEN AI features to generate recipes based on the ingredients provided by the user, there is also a set of machine learning models utilized to predict the cuisine of the generated recipe.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <button class="resbut"><a href="https://github.com/sriharikarthik13">See more</a></button></a>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("subcategory-links");
+    var tabcontents = document.getElementsByClassName("subcategory-details");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+//Creating a simple self evoking function to display the about me section in a typing format
+//First declare a set of values you want to display
+const vals = ["Python Developer", "Data Enthusiast", "Consultant at Deloitte", "CSE Undergrad", "SQL Developer"];
+//Declare values for checking if the length of particular word has been entirely printed out
+let count_of_val = 0;
+//Creating another variable to determine, which character of the word to print - (Print each set of letters of the word one by one)
+let idx = 0;
+//Create a temp variable to store each value from the list
+let curtextval = '';
+//Create a temp variable to store each character of the word value required to print on the screen.
+let letter = '';
+//Creating a self invoke function, that does the following:
+//Takes one word from the list, then slices the word in such a way to to print characters or set of characters of the word, one by one=> P, Py, Pyt , Pyth and so on.
+// Sets the value of the display text as the retrieved value\
+// Checks if the value lenght and the character length is equal, if that is the case then the idx is set to 0 and the value is increamented to the next word.
+// The text is displayed in a particular time interval using setTimeout -> the function is called at a speed of 1 sec each
+(function type() {
+   if (count_of_val === vals.length) {
+       count_of_val = 0; // Restart the list
+   }
+   curtextval = vals[count_of_val];
+   letter = curtextval.slice(0, idx);
+   document.getElementById('typing').textContent = letter;
+   idx = idx +1;
+   if (letter.length === curtextval.length) {
+       count_of_val++;
+       idx = 0;
+       setTimeout(type, 1000); 
+   } else {
+       setTimeout(type, 200); 
+   }
+})();
+ 
+
+</script>
+
+</body>
+</html>
