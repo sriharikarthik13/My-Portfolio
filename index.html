@@ -1,230 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="Portfolio of a creative developer demonstrating skills and projects.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
-  
 </head>
+
 <body>
-<div id="pagehead">
-    <div class="container">
-        <nav>
-     
-            <ul id="headermenu">
-                <li><a href="#pagehead">Home</a></li>
-                <li><a href="#details">About</a></li>
-                <li><a href="#skl">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio.</a>
+            <ul class="nav-links">
+                <li><a href="#about"><span class="nav-number"></span> About</a></li>
+                <li><a href="#skills"><span class="nav-number"></span> Skills</a></li>
+                <li><a href="#experience"><span class="nav-number"></span> Experience</a></li>
+                <li><a href="#work"><span class="nav-number"></span> Work</a></li>
+                <li><a href="#contact"><span class="nav-number"></span> Contact</a></li>
+                <li><a href="/resume.pdf" class="btn small">Resume</a></li>
             </ul>
-            
-        </nav>
-        <div class="pagehead-txt">
-            <h1 >Hi, I'm <span>Srihari Karthik</span><br></h1>
-            <p ><span id="typing">Python Developer/Data Enthusiast</span></p>
-            
         </div>
-    </div>
-</div>
+    </nav>
 
-<div id="details">
-    <div class="container">
-        <div class="row">
-            <div class="details-col-1">
-                <img src="images/me.jfif">
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="accent-text">Hi, my name is</p>
+                <h1>Srihari Karthik.</h1>
+                <h2 class="text-secondary">Data and AI focussed Product Manager</h2>
+                <p class="hero-desc">
+                    Building impactful products at the intersection of product, data, and AI
+                </p>
+                <a href="#work" class="btn mt-lg">Check out my projects!</a>
             </div>
-            <div class="details-col-2">
-                <h1 class="title1">About Me</h1>
-                <p>Product-focused tech professional with experience delivering GenAI solutions using AWS (Bedrock, Lambda, EC2), Python, SQL, and RAG pipelines. 
 
-I’ve contributed to end-to-end product development across analytics and cybersecurity domains — including building a multi-agent clinical chatbot and owning Deloitte’s CTF platform deployed across U.S. universities. 
+            <div class="hero-visual">
+                <!-- Abstract Circle Background -->
+                <div class="visual-circle"></div>
 
-Skilled in user research, product architecture, and roadmap planning, with a focus on creating scalable, user-centric solutions.</p>
-
-                <div class="subcategory-title">
-                 
-                    <p class="subcategory-links active-link" onclick="opentab('experience')">Experience</p>
-                    <p class="subcategory-links" onclick="opentab('education')">Education</p>
-                    <p class="subcategory-links" onclick="opentab('resume')">Resume</p>
-                    <p class="subcategory-links" onclick="opentab('contact')">Contact</p>
+                <!-- Impact Stars -->
+                <div class="impact-star star-1">
+                    <span class="star-icon">★</span>
+                    <div class="star-content">
+                        <span class="star-value">3+</span>
+                        <span class="star-label">Years Exp</span>
+                    </div>
                 </div>
 
-                <div class="subcategory-details active-tab" id="experience">
-                    <ul>
-                        <li><span>June 2022 - August 2024</span><br>Consultant at Deloitte</li>
-                        <li><span>Jan 2022 - April 2022</span><br>Tech Intern at Deloitte</li>
-                    </ul>
+                <div class="impact-star star-2">
+                    <span class="star-icon">⚡</span>
+                    <div class="star-content">
+                        <span class="star-value">15+</span>
+                        <span class="star-label">Gen AI Use Cases</span>
+                    </div>
                 </div>
-                <div class="subcategory-details" id="education">
-                    <ul>
-                        <li><span>2025 Incoming</span><br>Masters in Engineering Mangenment from Dartmouth College</li>
-                        <li><span>2018-2022</span><br>B-Tech Computer Science from SRM Institute of Technology</li>
-                    </ul>
+
+                <div class="impact-star star-3">
+                    <span class="star-icon">🚀</span>
+                    <div class="star-content">
+                        <span class="star-value">100+</span>
+                        <span class="star-label">Features Shipped</span>
+                    </div>
                 </div>
-                <div class="subcategory-details" id="resume">
-                    <ul>
-                        <li><span>Click Below to view my resume</span><br><br><a href="./images/Srihari Karthik Resume 2025.pdf"><button class ="resbut">Click Here!</button></a></li>
-                    </ul>
+
+                <div class="impact-star star-4">
+                    <span class="star-icon">👥</span>
+                    <div class="star-content">
+                        <span class="star-value">5X</span>
+                        <span class="star-label">User Growth</span>
+                    </div>
                 </div>
-                <div class="subcategory-details" id="contact">
-                    <ul>
-                        <li><span>LinkedIn </span><br>https://www.linkedin.com/in/srihari-karthik-9390321bb/</i></li>
-                        <li><span>Email</span><br>sriharikarthik13@gmail.com</li>
-                        <li><span>Phone No.</span><br>+919087908748</li>
-                    </ul>
+
+                <div class="impact-star star-5">
+                    <span class="star-icon">💵</span>
+                    <div class="star-content">
+                        <span class="star-value">$500K</span>
+                        <span class="star-label">Cost Savings</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div id="skl">
-    <div class="container">
-        <h1 class="title1">My Skills</h1>
-        <div class="services-list">
-           
-            <div class="pop">
-                <img src="images/pp.png">
-               
-                <i class="fas fa-code"></i>
-                <h2>Product Management</h2>
-                <br>
-                <p>Skills : <br> Product Strategy, User/Market Research, GTM</p>
-                <br>
-                <p> With hands-on experience leading both enterprise AI initiatives and fast-paced hackathon products, I bring a strong mix of strategic thinking and execution to product development. I’ve conducted over 15+ discovery interviews and current-state assessments for Gen-AI use cases at Biogen, translating complex business needs into product blueprints, system architectures, and actionable roadmaps.
-
-<br> <br> As the product owner for Deloitte’s CyberHackathon platform, I led the end-to-end lifecycle from ideation to GTM strategy—crafting 30+ Python-based challenges, analyzing user personas, and refining the product based on real-time feedback. I thrive at the intersection of user empathy, market insight, and technical feasibility—designing experiences that are both impactful and scalable.  </p>
-                
-            </div>
-            <div class="pop">
-                <img src="images/AWS.png">
-               
-                <i class="fas fa-code"></i>
-                <h2>Cloud-Native Development (AWS)</h2>
-                <br>
-                <p>Skills : <br> AWS : Lambda, EC2, S3, Bedrock</p>
-                <br>
-                <p>I specialize in building scalable, production-grade applications on AWS—particularly in the generative AI and healthcare space. At Deloitte, I engineered a clinical Gen-AI chatbot using AWS Bedrock, Lambda, and EC2, evolving it from a single-agent prototype into a multi-agent platform delivering real-time insights. My work spans backend architecture, deployment, and experience in designing resilient cloud solutions.<br><br> I’ve also led stakeholder demos and played a key role in securing early adoption interest from healthcare clients. </p>
-                
-            </div>
-            <div class="pop">
-                <img src="images/wb.png">
-               
-                <i class="fas fa-code"></i>
-                <h2>Data Driven Engineering</h2>
-                <br>
-                <p>Skills : <br>Python, SQL, Pandas, ML, NLP, Flask, Django, REST APIs</p>
-                <br>
-                <p>With strong foundations in Python, SQL, and machine learning, I specialize in building intelligent, data-driven products. I’ve developed end-to-end ML pipelines using algorithms like XGBoost, SVM, KNN, and K-Means, and have also built practical NLP applications involving text classification, semantic similarity, and keyword extraction.<br> <br>
-
-In addition, I have developed and deployed full-stack web applications using Flask and Django, integrating both frontend logic and backend intelligence. My experience spans from building smart data pipelines to delivering functional user-facing interfaces — enabling me to translate complex data problems into real-world software solutions.</p>
-                
-            </div>
-            
-
-
-            
-        </div>
-    </div>
-</div>
-
-
-
-<div id="projects">
-    <div class="container">
-        <h1 class="title1">My Projects</h1>
-        <div class="listofprojects">
-            <div class="project">
-                <img src="images/mm.png">
-                <div class="box">
-                    <h3>Music Monsoon</h3>
-                    <p>Building a Weather-Based Music Recommendation Product from Scratch.</p>
-                    <a href="https://medium.com/@sriharikarthik13/music-monsoon-ebf0bc2cb93c"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/sku.png">
-                <div class="box">
-                    <h3>Smart SKU Optimization Using NLP</h3>
-                    <p>Recommending Better Substitutes for Low-Performing Products Using Text Similarity and Sales Data.</p>
-                    <a href="https://medium.com/@sriharikarthik13/smart-sku-optimization-using-nlp-44fdbe9cc669"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/RRR.png">
-                <div class="box">
-                    <h3>What's Cooking?</h3>
-                    <p>Building a GenAI-Powered Recipe Generator for Everyday Cooks.</p>
-                    <a href="https://medium.com/@sriharikarthik13/whats-cooking-ec2436ed75cb"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                
             </div>
         </div>
-        <button class="resbut"><a href="https://github.com/sriharikarthik13">See more</a></button></a>
-    </div>
-</div>
+    </section>
+
+    <!-- About / Skills Section -->
+    <section id="about">
+        <h2 class="section-title"><span>01.</span> About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello, My Name is Hari!</p>
+                <br>
+                <p>I’m currently an M.E.M. student at Dartmouth, with 3+ years of experience at Deloitte working at the
+                    intersection of product, data, and AI. I’ve built and scaled data-driven and GenAI-powered
+                    solutions, collaborating closely with engineering and business teams. I’m passionate about using
+                    data and AI to turn real user pain points into effective, scalable products that create measurable
+                    impact.</p>
+                <div class="education-header">
+                    <p>My Educational Background:</p>
+                </div>
+                <div class="education-grid">
+                    <!-- Card 1: Dartmouth -->
+                    <div class="education-card">
+                        <div class="card-header">
+                            <div class="edu-logo-wrapper">
+                                <!-- Placeholder for College Logo -->
+                                <img src="images/dart.png" alt="Dartmouth College" class="edu-logo">
+                            </div>
+                            <div class="edu-main-info">
+                                <h3 class="edu-degree">Masters in Engineering Management</h3>
+                                <h4 class="edu-school">Dartmouth College</h4>
+                                <span class="edu-dates">2025 - 2026</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="edu-courses"><strong>Relevant Courses:</strong> Statistics, Marketing, Technology
+                                Assessment, Data Analytics, Product Management</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Undergraduate (Placeholder) -->
+                    <div class="education-card">
+                        <div class="card-header">
+                            <div class="edu-logo-wrapper">
+                                <!-- Placeholder for College Logo -->
+                                <img src="images/srm.jpg" alt="University Name" class="edu-logo">
+                            </div>
+                            <div class="edu-main-info">
+                                <h3 class="edu-degree">Bachelor of Computer Science</h3>
+                                <h4 class="edu-school">SRM IST</h4>
+                                <span class="edu-dates">2018 - 2022</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="edu-courses"><strong>Relevant Courses:</strong> Data Structures and Algorithms,
+                                Object Oriented Programming, Python, Database Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <div class="img-wrapper">
+                    <img src="images/DSC05405 (1).jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title"><span>02.</span> My Skills</h2>
+        <div class="skills-grid">
+            <!-- Frontend -->
+            <div class="skill-category">
+                <div class="cat-header">
+                    <i class="fas fa-rocket cat-icon"></i>
+                    <h3>Product Skills</h3>
+                </div>
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <!-- Original Content -->
+                        <div class="skill-tags">
+                            <span>Product Roadmapping</span>
+                            <span>User Interviews & Research</span>
+                            <span>PRDs & Product Documentation</span>
+                            <span>MVP Definition & Iteration</span>
+                            <span>Agile Execution</span>
+                            <span>Backlog Prioritization</span>
+                            <span>Hypothesis Validation</span>
+                            <span>Metrics-Driven Decision Making</span>
+                            <span>Cross-Functional Delivery</span>
+                            <span>Cost & Trade-off Analysis</span>
+                        </div>
+                        <!-- Duplicated Content for Seamless Loop -->
+                        <div class="skill-tags">
+                            <span>Product Roadmapping</span>
+                            <span>User Interviews & Research</span>
+                            <span>PRDs & Product Documentation</span>
+                            <span>MVP Definition & Iteration</span>
+                            <span>Agile Execution</span>
+                            <span>Backlog Prioritization</span>
+                            <span>Hypothesis Validation</span>
+                            <span>Metrics-Driven Decision Making</span>
+                            <span>Cross-Functional Delivery</span>
+                            <span>Cost & Trade-off Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <div class="cat-header">
+                    <i class="fas fa-laptop cat-icon"></i>
+                    <h3>Data & Tech Skills</h3>
+                </div>
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <!-- Original Content -->
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>SQL (CTEs, Window Functions)</span>
+                            <span>AWS Lambda</span>
+                            <span>AWS Bedrock</span>
+                            <span>API Gateway</span>
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>Git</span>
+
+                            <span>Hypothesis Testing</span>
+                            <span>A/B Testing</span>
+                            <span>Regression Analysis</span>
+                            <span>Time Series Analysis (ARIMA)</span>
+                            <span>Confidence Intervals</span>
+                            <span>Exploratory Data Analysis (EDA)</span>
+
+                            <span>AWS Glue</span>
+                            <span>Apache Spark (PySpark)</span>
+                            <span>ETL Pipelines</span>
+                            <span>Amazon Redshift</span>
+                            <span>SQL Optimization</span>
+                            <span>Apache Airflow</span>
+                            <span>Data Quality Validation</span>
+
+                            <span>XGBoost</span>
+                            <span>Predictive Modeling</span>
+                            <span>Natural Language Processing (NLP)</span>
+                            <span>LangChain</span>
+                            <span>Support Vector Machines (SVM)</span>
+                            <span>K-Nearest Neighbors (KNN)</span>
+                            <span>Linear Regression</span>
+                            <span>Logistic Regression</span>
+                            <span>Decision Trees</span>
+                            <span>BERT</span>
+
+                        </div>
+                        <!-- Duplicated Content for Seamless Loop -->
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>SQL (CTEs, Window Functions)</span>
+                            <span>AWS Lambda</span>
+                            <span>AWS Bedrock</span>
+                            <span>API Gateway</span>
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>Git</span>
+
+                            <span>Hypothesis Testing</span>
+                            <span>A/B Testing</span>
+                            <span>Regression Analysis</span>
+                            <span>Time Series Analysis (ARIMA)</span>
+                            <span>Confidence Intervals</span>
+                            <span>Exploratory Data Analysis (EDA)</span>
+
+                            <span>AWS Glue</span>
+                            <span>Apache Spark (PySpark)</span>
+                            <span>ETL Pipelines</span>
+                            <span>Amazon Redshift</span>
+                            <span>SQL Optimization</span>
+                            <span>Apache Airflow</span>
+                            <span>Data Quality Validation</span>
+
+                            <span>XGBoost</span>
+                            <span>Predictive Modeling</span>
+                            <span>Natural Language Processing (NLP)</span>
+                            <span>LangChain</span>
+                            <span>Support Vector Machines (SVM)</span>
+                            <span>K-Nearest Neighbors (KNN)</span>
+                            <span>Linear Regression</span>
+                            <span>Logistic Regression</span>
+                            <span>Decision Trees</span>
+                            <span>BERT</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category">
+                <div class="cat-header">
+                    <i class="fas fa-briefcase cat-icon"></i>
+                    <h3>Soft Skills</h3>
+                </div>
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <!-- Original Content -->
+                        <div class="skill-tags">
+                            <span>Problem Solving</span>
+                            <span>Structured Thinking</span>
+                            <span>Stakeholder Communication</span>
+                            <span>Cross-Functional Collaboration</span>
+                            <span>Data-Driven Decision Making</span>
+                            <span>User-Centric Mindset</span>
+                            <span>Analytical Reasoning</span>
+                            <span>Ownership & Accountability</span>
+                            <span>Prioritization</span>
+                            <span>Storytelling with Data</span>
+                            <span>Adaptability</span>
+                            <span>Leadership & Mentorship</span>
+                            <span>Attention to Detail</span>
+                            <span>Decision Making Under Ambiguity</span>
+
+                        </div>
+                        <!-- Duplicated Content for Seamless Loop -->
+                        <div class="skill-tags">
+                            <span>Problem Solving</span>
+                            <span>Structured Thinking</span>
+                            <span>Stakeholder Communication</span>
+                            <span>Cross-Functional Collaboration</span>
+                            <span>Data-Driven Decision Making</span>
+                            <span>User-Centric Mindset</span>
+                            <span>Analytical Reasoning</span>
+                            <span>Ownership & Accountability</span>
+                            <span>Prioritization</span>
+                            <span>Storytelling with Data</span>
+                            <span>Adaptability</span>
+                            <span>Leadership & Mentorship</span>
+                            <span>Attention to Detail</span>
+                            <span>Decision Making Under Ambiguity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title"><span>03.</span> Where I've Worked</h2>
+        <div class="jobs-tabs">
+            <!-- Job Content will go here -->
+            <div class="job-panel">
+                <h3>Product Consultant <span class="accent-text"> <br>@ Deloitte Health</span></h3>
+                <p class="range">Feb 2025 - Jun 2025</p>
+                <ul>
+                    <li> Worked on shaping, prioritizing, and cost-optimizing GenAI products by turning user needs into
+                        practical, scalable solutions.
+                    </li>
+
+                </ul>
+
+                <div class="job-impact">
+                    <h4>Key Impact</h4>
+                    <ul>
+                        <li>40% reduction in GenAI delivery costs</li>
+                        <li>20–25% overall platform spend savings</li>
+                        <li>$500K annual cost savings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job-panel">
+                <h3>Product Owner <span class="accent-text"> <br>@ Deloitte Hackazon</span></h3>
+                <p class="range">Dec 2023 - Feb 2025</p>
+                <ul>
+                    <li>Owned and scaled a cyber-hackathon platform by improving product flows, driving engagement, and
+                        leading cross-functional delivery.</li>
+
+                </ul>
+
+                <div class="job-impact">
+                    <h4>Key Impact</h4>
+                    <ul>
+                        <li>5× increase in platform engagement</li>
+                        <li>65% boost in user engagement</li>
+                        <li>$100K+ revenue impact</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job-panel">
+                <h3>Data Analyst <span class="accent-text"> <br>@ Deloitte Legal</span></h3>
+                <p class="range">Nov 2022 - Dec 2023</p>
+                <ul>
+                    <li>Improved legal analytics systems by building faster data pipelines, applying NLP, and
+                        translating client needs into insights.</li>
+
+
+                </ul>
+
+                <div class="job-impact">
+                    <h4>Key Impact</h4>
+                    <ul>
+                        <li>Model accuracy improved from 63% → 93%</li>
+                        <li>Document processing time reduced from 6 hrs → 2.5 hrs</li>
+                        <li>60% SQL query runtime reduction</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work">
+        <h2 class="section-title"><span>04.</span> Some Things I've Built</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="accent-text">Featured Project 1</p>
+                    <h3 class="project-title">Al Driven Grid Inspection Optimization</h3>
+                    <p class="project-tagline">An AI-driven solution to optimize power grid inspections by replacing
+                        manual workflows with drone-based GenAI and computer vision approaches.</p>
+                    <div class="project-impact">
+                        <span class="impact-icon">📉</span>
+                        <span class="impact-text">65% lower inspection costs</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-icon">💲</span>
+                        <span class="impact-text">20% cheaper vendor selection</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-icon">💰</span>
+                        <span class="impact-text">$230K projected savings (4 yrs)</span>
+                    </div>
+                    <div class="tech-box">
+                        <h4 class="tech-label">Tech Stack:</h4>
+                        <ul class="project-tech">
+                            <li>Drone-based Computer Vision</li>
+                            <li>GenAI Models</li>
+                            <li>Azure Cloud Storage (Hot Tier)</li>
+                            <li>Weighted Decision Matrix</li>
+                            <li>Excel</li>
+                            <li>Power Point</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="accent-text">Featured Project 2</p>
+                    <h3 class="project-title">Gen Al Chatbot for Healthcare Analytics</h3>
+                    <p class="project-tagline">A GenAI-driven healthcare analytics chatbot designed on AWS, incoporating
+                        with a
+                        modular multi-agent workflows and integrated with forecasting ML models</p>
+                    <div class="project-impact">
+                        <span class="impact-icon">📉</span>
+                        <span class="impact-text">95% reduction in manual analysis</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-icon">🎯</span>
+                        <span class="impact-text">40% improvement in output reliability</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-icon">⭐</span>
+                        <span class="impact-text">$5K AWS Funding</span>
+                    </div>
+                    <div class="tech-box">
+                        <h4 class="tech-label">Tech Stack:</h4>
+                        <ul class="project-tech">
+                            <li>AWS</li>
+                            <li>GenAI</li>
+                            <li>Multi-Agent Architecture</li>
+                            <li>Healthcare Analytics Pipelines</li>
+                            <li>LangChain</li>
+                            <li>LLMs</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="accent-text">Featured Project 3</p>
+                    <h3 class="project-title">Weather-Based Music Recommendation System </h3>
+                    <p class="project-tagline">A weather-based music recommendation product that combines user research
+                        with ML to deliver mood-aware listening experiences.</p>
+                    <div class="project-impact">
+                        <span class="impact-icon">👥</span>
+                        <span class="impact-text">30+ users researched for behavior insights</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-icon">5️⃣</span>
+                        <span class="impact-text">5+ genre–weather mappings defined</span>
+                    </div>
+
+                    <div class="project-impact">
+                        <span class="impact-icon">🛠️</span>
+                        <span class="impact-text">MVP demoed to 15+ users for iteration</span>
+                    </div>
+                    <div class="tech-box">
+                        <h4 class="tech-label">Tech Stack:</h4>
+                        <ul class="project-tech">
+                            <li>Flask</li>
+                            <li>CNN Model</li>
+                            <li>Python</li>
+                            <li>Web Application</li>
+                            <li>User Research & Product Discovery</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+
+
+                    </div>
+                </div>
+            </div>
 
 
 
 
-<script>
+    </section>
 
-    var tablinks = document.getElementsByClassName("subcategory-links");
-    var tabcontents = document.getElementsByClassName("subcategory-details");
+    <!-- Contact Section -->
+    <section id="contact" class="text-center">
+        <h2 class="big-heading">Get In Touch</h2>
+        <p class="contact-desc">
+            Excited to connect on opportunities across product, data, and AI, and always open to engaging with new
+            ideas, challenges, and collaborations. Please feel free to reach out.
+        </p>
+        <div class="contact-buttons">
+            <a href="mailto:srihari.karthik.th@dartmouth.edu" class="btn big-btn">Say Hello</a>
+            <a href="https://github.com/sriharikarthik13" target="_blank" class="btn big-btn github-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+    <footer>
+        <p>Built by Srihari Karthik.</p>
+    </footer>
 
-</script>
-
-<script>
-//Creating a simple self evoking function to display the about me section in a typing format
-//First declare a set of values you want to display
-const vals = ["Product Owner", "Data Consultant", "Python & SQL Developer", "Dartmouth MEM"];
-//Declare values for checking if the length of particular word has been entirely printed out
-let count_of_val = 0;
-//Creating another variable to determine, which character of the word to print - (Print each set of letters of the word one by one)
-let idx = 0;
-//Create a temp variable to store each value from the list
-let curtextval = '';
-//Create a temp variable to store each character of the word value required to print on the screen.
-let letter = '';
-//Creating a self invoke function, that does the following:
-//Takes one word from the list, then slices the word in such a way to to print characters or set of characters of the word, one by one=> P, Py, Pyt , Pyth and so on.
-// Sets the value of the display text as the retrieved value\
-// Checks if the value lenght and the character length is equal, if that is the case then the idx is set to 0 and the value is increamented to the next word.
-// The text is displayed in a particular time interval using setTimeout -> the function is called at a speed of 1 sec each
-(function type() {
-   if (count_of_val === vals.length) {
-       count_of_val = 0; // Restart the list
-   }
-   curtextval = vals[count_of_val];
-   letter = curtextval.slice(0, idx);
-   document.getElementById('typing').textContent = letter;
-   idx = idx +1;
-   if (letter.length === curtextval.length) {
-       count_of_val++;
-       idx = 0;
-       setTimeout(type, 1000); 
-   } else {
-       setTimeout(type, 200); 
-   }
-})();
- 
-
-</script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
